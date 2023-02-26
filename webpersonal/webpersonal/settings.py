@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    'portfolio'     # nombre de la app que creamos 'portfolio'
+    'portfolio.apps.PortfolioConfig'     # nombre de la app que creamos 'portfolio'
 ]
 
 MIDDLEWARE = [
@@ -118,6 +118,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Media files creado a mano para indicar a Django donde debe ir a buscarlos
+
+### MEDIA_URL = '/media/'
+### MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
